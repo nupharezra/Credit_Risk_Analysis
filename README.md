@@ -11,14 +11,16 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 ![oversampling.png](oversampling.png)
 
   * Accuracy Score
-![Oversampling1.png](Oversampling1.png)
+  
+  ![Oversampling1.png](Oversampling1.png)
 
 
 # SMOTE
 ![SMOTE.png](SMOTE.png)
 
   * Accuracy Score
-![oversampling2.png](oversampling2.png)
+  
+  ![oversampling2.png](oversampling2.png)
 
 
 The Random Over Sampler model will generate new samples by randomly selecting replacements from existing samples to account for the lack of minority representation. In this model, the accuracy score was 0.65 while the f1 score was 0.73. Using Synthetic Minority Over-sampling Technique or SMOTE, random sample points from the minority class are chosen then data points of the nearest neighbors are selected to generate synthetic examples. In this analysis, the SMOTE method produced a Balanced accuracy score of 0.66 and f1 of 0.80.
@@ -27,7 +29,8 @@ The Random Over Sampler model will generate new samples by randomly selecting re
 ![undersampling.png](undersampling.png)
 
   * Accuracy Score
-![undersampling1.png](undersampling1.png)
+
+  ![undersampling1.png](undersampling1.png)
 
 Cluster Centroids is an undersampling method where the algorithm identifies clusters of the majority class, then generates synthetic data points called centroids. The majority class is then undersampled down to the size of the minority class. In this analysis, the Cluster Centroids method produced an accuracy score of 0.54 and an f1 of 0.56, which underperforms compared to the oversampling techniques with this particular dataset.
 
@@ -35,7 +38,8 @@ Cluster Centroids is an undersampling method where the algorithm identifies clus
 ![SMOTEENN.png](SMOTEENN.png)
 
   * Accuracy Score
-![combination.png](combination.png)
+
+  ![combination.png](combination.png)
 
 The SMOTEENN method is a combination of oversampling and undersampling approaches, using SMOTE and Edited Nearest Neighbors (ENN). In this analysis, SMOTEENN produced an accuracy Score of 0.64 and an F-1 of 0.72, performing similarly to the Oversampling methods, but with a slightly lower recall score.
 
@@ -43,13 +47,15 @@ The SMOTEENN method is a combination of oversampling and undersampling approache
 ![balanced_forest_classifier.png](balanced_forest_classifier.png)
 
   * Accuracy Score
-![balanced.png](balanced.png)
+
+  ![balanced.png](balanced.png)
 
 # Easy Ensemble AdaBoost Classifier
 ![Easy_Ensemble_AdaBoost_Classifier.png](Easy_Ensemble_AdaBoost_Classifier.png)
 
   * Accuracy Score
-![easy.png](easy.png)
+
+  ![easy.png](easy.png)
 
 The Balanced Random Forest Classifier method randomly under-samples each bootstrap sample to balance it. The Easy Ensemble Classifier also achieves balance through random undersampling, but by utilizing AdaBoost learners. In this analysis, the Balanced Random Forest Classifier had an accuracy score of 0.79 and an F-1 of 0.93, while Easy Ensemble Classifier had an accuracy score of 0.93 and an F-1 score of 0.97.
 
